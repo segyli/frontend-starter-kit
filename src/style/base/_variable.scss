@@ -1,0 +1,268 @@
+// Variables
+//
+// This file is influenced by Bootstrap v4 Alpha.
+
+
+// Table of ontents
+//
+// Colors
+// Options
+// Spacing
+// Body
+// Links
+// Grid breakpoints
+// Grid containers
+// Grid columns
+// Fonts
+// Components
+
+// General variable structure
+//
+// Variable format should follow the `$component-modifier-state-property` order.
+
+
+// Colors
+//
+// Grayscale and brand colors for use across the site.
+
+$black         : rgba(0,0,0,1);
+$gray-dark     : rgba(55,58,60,1);
+$gray          : rgba(85,89,92,1);
+$gray-light    : rgba(129,138,146,1);
+$gray-lighter  : rgba(236,238,239,1);
+$gray-lightest : rgba(247,247,249,1);
+$white         : rgba(255,255,255,1);
+$transparent   : rgba(255,255,255,1);
+
+$brand-primary : rgba(117,142,232,1);
+$brand-success : rgba(0,195,63,1);
+$brand-info    : rgba(4,152,248,1);
+$brand-warning : rgba(255,194,0,1);
+$brand-danger  : rgba(233,0,27,1);
+
+$btn-green: rgba(131,209,22,1);
+
+// Spacing
+//
+// Control the default
+// variables. Mostly focused on spacing.
+
+$spacer       : 1rem !default;
+$spacer-x     : $spacer !default;
+$spacer-y     : $spacer !default;
+$border-width : .0625rem !default;
+
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg    : rgba(232,234,240,1);
+$body-color : rgba(69,71,77,1);
+
+
+// Links
+//
+// Style anchor elements.
+
+$link-color            : rgba(37,142,224,1) !default;
+$link-hover-color      : lighten($link-color, 15%) !default;
+$link-hover-decoration : none !default;
+
+// Bootstrap Grid only
+//
+// Includes relevant variables and mixins for the regular (non-flexbox) grid
+// system, as well as the generated predefined classes (e.g., `.col-4-sm`).
+
+
+//
+// Variables
+//
+
+// Grid system
+//
+// Define your custom responsive grid.
+$grid-breakpoints: (
+  // Extra small screen / phone
+  xs: 0,
+  // Small screen / phone
+  sm: 34em,
+  // Medium screen / tablet
+  md: 48em,
+  // Large screen / desktop
+  lg: 62em,
+  // Extra large screen / wide desktop
+  xl: 75em
+) !default;
+
+// Number of columns in the grid.
+$grid-columns: 12 !default;
+
+// Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-width: 1.5rem !default;
+
+
+// Container sizes
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 34rem,    // 480
+  md: 45rem,    // 720
+  lg: 60rem,    // 960
+  xl: 72.25rem  // 1140
+) !default;
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+$enable-flex: false !default;
+
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-family-base: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", STHeiti,"STHeiti Light [STXihei]", "Microsoft Yahei", sans-serif !default;
+
+// Pixel value used to responsively scale all typography. Applied to the `<html>` element.
+$font-size-root-sm       : 15px !default;
+$font-size-root          : 16px !default;
+$font-size-root-lg       : 17px !default;
+
+$font-size-base          : 1rem !default;
+$font-size-lg            : 1.25rem !default;
+$font-size-sm            : .85rem !default;
+$font-size-xs            : .75rem !default;
+
+$font-size-h1            : 2.5rem !default;
+$font-size-h2            : 2rem !default;
+$font-size-h3            : 1.75rem !default;
+$font-size-h4            : 1.5rem !default;
+$font-size-h5            : 1.25rem !default;
+$font-size-h6            : 1rem !default;
+
+$display1-size           : 3.5rem !default;
+$display2-size           : 4.5rem !default;
+$display3-size           : 5.5rem !default;
+$display4-size           : 6rem !default;
+
+$display1-weight         : 300 !default;
+$display2-weight         : 300 !default;
+$display3-weight         : 300 !default;
+$display4-weight         : 300 !default;
+
+$line-height             : 1.5 !default;
+
+$headings-margin-bottom  : ($spacer / 2) !default;
+$headings-font-family    : inherit !default;
+$headings-font-weight    : 500 !default;
+$headings-line-height    : 1.1 !default;
+$headings-color          : inherit !default;
+
+$lead-font-size          : 1.25rem !default;
+$lead-font-weight        : 300 !default;
+
+$text-muted              : $gray-light !default;
+
+$abbr-border-color       : $gray-light !default;
+
+$blockquote-small-color  : $gray-light !default;
+$blockquote-font-size    : ($font-size-base * 1.25) !default;
+$blockquote-border-color : $gray-lighter !default;
+
+$hr-border-color         : rgba(0,0,0,.1) !default;
+$hr-border-width         : $border-width;
+
+
+// Z-index master list
+//
+// Warning: Avoid customizing these values. They're used for a bird's eye view
+// of components dependent on the z-axis and are designed to all work together.
+//
+// Note: These variables are not generated into the Customizer.
+
+$zindex-tappable          : 100  !default;
+$zindex-navbar            : 1000 !default;
+$zindex-dropdown          : 1000 !default;
+$zindex-popover           : 1060 !default;
+$zindex-tooltip           : 1070 !default;
+$zindex-navbar-fixed      : 1030 !default;
+$zindex-navbar-menu       : 1035 !default;
+$zindex-navbar-sticky     : 1030 !default;
+$zindex-mobileNavMenu     : 1040 !default;
+$zindex-modal-bg          : 1100 !default;
+$zindex-modal             : 1110 !default;
+$zindex-progressindicator : 1200 !default;
+$zindex-alert             : 1300 !default;
+$zindex-default-utmost    : 2000 !default;
+
+// Border-radius
+//
+// Use mostly on buttons
+
+$border-radius: .125rem !default;
+$border-radius-md: .25rem !default;
+$border-radius-lg: .375rem !default;
+
+
+// Tables
+//
+// Customizes the `.table` component with basic values, each used across all table variations.
+
+$table-cell-padding:            .75rem !default;
+$table-sm-cell-padding:         .3rem !default;
+
+$table-bg:                      transparent !default;
+$table-bg-accent:               #f9f9f9 !default;
+$table-bg-hover:                #f5f5f5 !default;
+$table-bg-active:               $table-bg-hover !default;
+
+$table-border-color:            $gray-lighter !default;
+
+
+// Form states and alerts
+//
+// Define colors for form feedback states and, by default, alerts.
+
+$state-success-text:             #3c763d !default;
+$state-success-bg:               #dff0d8 !default;
+$state-success-border:           darken($state-success-bg, 5%) !default;
+
+$state-info-text:                #31708f !default;
+$state-info-bg:                  #d9edf7 !default;
+$state-info-border:              darken($state-info-bg, 7%) !default;
+
+$state-warning-text:             #8a6d3b !default;
+$state-warning-bg:               #fcf8e3 !default;
+$state-warning-border:           darken($state-warning-bg, 5%) !default;
+
+$state-danger-text:              #a94442 !default;
+$state-danger-bg:                #f2dede !default;
+$state-danger-border:            darken($state-danger-bg, 5%) !default;
+
+
+// Alerts
+//
+// Define alert colors, border radius, and padding.
+
+$alert-padding: $spacer-y * 1.5 $spacer-x !default;
+$alert-border-radius: 0 !default;
+$alert-link-font-weight: normal !default;
+
+$alert-success-bg: rgba(20,192,77,1) !default;
+$alert-success-text: $white !default;
+
+$alert-info-bg: rgba(0,156,243,1) !default;
+$alert-info-text: $white !default;
+
+$alert-warning-bg: rgba(255,191,0,1) !default;
+$alert-warning-text: $white !default;
+
+$alert-danger-bg: rgba(230,12,41,1) !default;
+$alert-danger-text: $white !default;
+
+// Animation
+
+$animation-basic: all .25s ease-in-out !default;
+$animation-modal: opacity .3s ease !default;

@@ -1,0 +1,6 @@
+// Multiple CSS transition mixin
+// $transition = [transition-property] [transition-duration] [transition-timing-function] [transition-delay]
+
+@mixin transition($transition...) {
+  transition: $transition;
+}

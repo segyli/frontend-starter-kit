@@ -1,0 +1,5 @@
+// Multiple box shadow mixin
+
+@mixin box-shadow($shadow...) {
+  box-shadow: $shadow;
+}

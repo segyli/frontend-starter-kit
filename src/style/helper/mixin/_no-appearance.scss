@@ -1,0 +1,8 @@
+// reset default styles on form controls to none
+// browser support is decent with all major browser supporting it but ie 11 and down.
+
+@mixin no-appearance() {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
