@@ -19,13 +19,13 @@
 @import "component/nav";
 
 // All the building blocks
-@import "component/alert";
-@import "component/alert-close";
-@import "component/button";
+@import "module/alert";
+@import "module/alert-close";
+@import "module/button";
 @import "module/gridify";
-@import "component/hamburger-menu";
-@import "component/loader";
-@import "component/modal";
+@import "module/hamburger";
+@import "module/loader";
+@import "module/modal";
 
 // Layout stuff
 @import "layout/header";

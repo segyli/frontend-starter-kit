@@ -53,6 +53,12 @@ gulp.task('sass', function() {
         .pipe(browserSync.stream({match: '**/*.css'}));
 });
 
+// copy over all font files for deployment
+gulp.task('font', function() {
+    return gulp.src('./src/font/*.*')
+          .pipe(gulp.dest('./static/font'));
+});
+
 // build svg icon sprite
 gulp.task('icon-sprite', function() {
     return gulp.src('./src/img/icon/*.svg')
