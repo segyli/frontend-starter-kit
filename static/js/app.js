@@ -22164,7 +22164,7 @@ $(document).ready(function($) {
   }
 
   // init stuff when user is not logged in
-
+  alert('hello');
   // this is an example of how to use controller and action variables
   if (controller === 'list') {
     // App.List.init();
@@ -22173,5 +22173,4 @@ $(document).ready(function($) {
       // App.ListHottest.init();
     }
   }
-  console.log('hello');
 });
